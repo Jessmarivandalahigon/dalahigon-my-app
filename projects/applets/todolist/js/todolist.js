@@ -1,11 +1,13 @@
+// JavaScript for Todo List
 function addTask() {
-    var taskInput = document.getElementById("taskInput");
-    var taskList = document.getElementById("taskList");
+    var taskInput = document.getElementById('taskInput').value;
+    var taskList = document.getElementById('taskList');
 
-    if (taskInput.value !== "") {
-        var li = document.createElement("li");
-        li.textContent = taskInput.value;
+    if (taskInput.trim() !== '') {
+        var li = document.createElement('li');
+        li.className = 'list-group-item';
+        li.appendChild(document.createTextNode(taskInput));
         taskList.appendChild(li);
-        taskInput.value = "";
+        document.getElementById('taskInput').value = '';
     }
 }
