@@ -3,4 +3,7 @@
     width: 150px; /* Set width */
     height: 150px; /* Set height */
     object-fit: cover; /* Maintain aspect ratio and cover container */
+    display: flex;
+            justify-content: center;
+            align-items: center;
 }
