@@ -1,6 +1,0 @@
-/* Custom styles */
-.app-img {
-    width: 150px; /* Set width */
-    height: 150px; /* Set height */
-    object-fit: cover; /* Maintain aspect ratio and cover container */
-}
